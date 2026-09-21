@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#293832">
+  <meta name="description" content="TOVENI — contemporary configurable furniture made for real rooms. Fictional commercial demo project.">
+  <title>TOVENI — Made to fit real rooms.</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.2 4.2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 5.7c-2.1-2.2-5.5-2.2-7.7 0L12 6.8l-1.1-1.1a5.4 5.4 0 0 0-7.7 7.6L12 22l8.8-8.7a5.4 5.4 0 0 0 0-7.6Z"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 15.5A9 9 0 0 1 8.5 3.5 9 9 0 1 0 20.5 15.5Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7.2 3.5 4.5 5c-.8.5-1.1 1.4-.8 2.3 2.1 6.3 6.1 10.3 12.4 12.4.9.3 1.8 0 2.3-.8l1.6-2.7-4.1-2-1.3 1.7c-2.6-1.1-4.5-3-5.6-5.6L10.8 9 8.7 4.9 7.2 3.5Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z"/><circle cx="12" cy="10" r="2"/></symbol>
+    <symbol id="i-ruler" viewBox="0 0 24 24"><path d="m4 17 13-13 3 3L7 20H4v-3Z"/><path d="m13 8 3 3M10 11l2 2M7 14l3 3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M5 7h14M9 7V4h6v3M8 10v8M12 10v8M16 10v8M7 7l1 14h8l1-14"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m8 10 4 4 4-4"/></symbol>
+  </svg>
+
+  <div class="demo-strip">
+    <div class="shell demo-strip__inner">
+      <span><span class="demo-dot"></span><span data-i18n="demoNotice">Fictional furniture brand · Portfolio demo · No real orders are processed</span></span>
+      <button type="button" class="strip-link" data-scroll="#contact" data-i18n="contactUs">Contact</button>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="TOVENI home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><rect x="4" y="5" width="40" height="38" rx="2" fill="none" stroke="currentColor"/><path d="M11 14h26v6H28v17h-7V20H11z" fill="currentColor"/><path d="M31 14h7L28 37h-7z" fill="var(--accent)"/></svg>
+        </span>
+        <span class="brand-copy"><strong>TOVENI</strong><small data-i18n="brandDescriptor">FURNITURE / YEREVAN</small></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#shop" data-i18n="navShop">Shop</a>
+        <a href="#collections" data-i18n="navCollections">Collections</a>
+        <a href="#custom" data-i18n="navCustom">Custom</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#trade" data-i18n="navTrade">Trade / B2B</a>
+        <a href="#showrooms" data-i18n="navShowrooms">Showrooms</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-switch" aria-label="Language selector">
+          <button type="button" class="lang-btn active" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="hy">HY</button>
+          <button type="button" class="lang-btn" data-lang="ru">RU</button>
+        </div>
+        <button class="icon-btn" type="button" id="themeToggle" aria-label="Toggle theme"><svg><use href="#i-moon"></use></svg></button>
+        <button class="icon-btn count-btn" type="button" id="favoritesOpen" aria-label="Favorites"><svg><use href="#i-heart"></use></svg><span class="count-badge" id="favoriteCount">0</span></button>
+        <button class="icon-btn count-btn" type="button" id="inquiryOpen" aria-label="Inquiry list"><svg><use href="#i-bag"></use></svg><span class="count-badge" id="inquiryCount">0</span></button>
+        <button class="btn btn-primary header-cta" type="button" data-open-order data-i18n="requestOrder">Request order</button>
+        <button class="menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"><svg><use href="#i-menu"></use></svg></button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <div class="shell mobile-menu__inner">
+        <a href="#shop" data-i18n="navShop">Shop</a>
+        <a href="#collections" data-i18n="navCollections">Collections</a>
+        <a href="#custom" data-i18n="navCustom">Custom</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#trade" data-i18n="navTrade">Trade / B2B</a>
+        <a href="#showrooms" data-i18n="navShowrooms">Showrooms</a>
+        <button class="btn btn-primary" type="button" data-open-order data-i18n="requestOrder">Request order</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" aria-labelledby="heroTitle">
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="kicker" data-i18n="heroEyebrow">CONTEMPORARY FURNITURE · MADE IN YEREVAN</p>
+          <h1 id="heroTitle" data-i18n="heroTitle">Furniture designed around real space.</h1>
+          <p class="hero-lead" data-i18n="heroLead">Configurable sizes, materials and finishes for homes and small commercial interiors — with clear pricing and production terms.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary btn-large" type="button" data-scroll="#shop" data-i18n="shopFurniture">Shop furniture</button>
+            <button class="btn btn-line btn-large" type="button" data-scroll="#custom" data-i18n="exploreCustom">Explore custom</button>
+          </div>
+          <div class="hero-stats">
+            <div><strong>20</strong><span data-i18n="statProducts">catalog products</span></div>
+            <div><strong>4</strong><span data-i18n="statCollections">collections</span></div>
+            <div><strong>3</strong><span data-i18n="statLanguages">interface languages</span></div>
+          </div>
+        </div>
+
+        <div class="hero-media reveal reveal-delay">
+          <img src="https://images.unsplash.com/photo-1771888703723-01d85da1dae1?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1800" alt="Contemporary living room with sofas and chairs">
+          <div class="hero-media__note">
+            <span class="note-index">01</span>
+            <div><strong>Luma / Contour</strong><span data-i18n="heroMediaNote">Configured for a 220 cm wall</span></div>
+            <button class="round-arrow" type="button" data-product="luma-sofa-3" aria-label="View Luma Sofa 3"><svg><use href="#i-arrow"></use></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-rail" aria-label="Services">
+      <div class="shell service-rail__grid">
+        <div><svg><use href="#i-ruler"></use></svg><span><strong data-i18n="railMeasureTitle">Measurement</strong><small data-i18n="railMeasureText">Yerevan visits from 12,000 AMD</small></span></div>
+        <div><span class="rail-symbol">↔</span><span><strong data-i18n="railConfigureTitle">Controlled customization</strong><small data-i18n="railConfigureText">Sizes, finishes, fabrics and modules</small></span></div>
+        <div><svg><use href="#i-check"></use></svg><span><strong data-i18n="railDeliveryTitle">Delivery & assembly</strong><small data-i18n="railDeliveryText">Across Yerevan and Armenia</small></span></div>
+        <button class="rail-link" type="button" data-open-order><span data-i18n="railAsk">Ask about a room</span><svg><use href="#i-arrow"></use></svg></button>
+      </div>
+    </section>
+
+    <section class="section shop-section" id="shop">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div><p class="kicker" data-i18n="catalogEyebrow">SHOP / CONFIGURE / REQUEST</p><h2 data-i18n="catalogTitle">Built into the collection.<br>Made for your room.</h2></div>
+          <p data-i18n="catalogIntro">Browse the full fictional catalog, then change the parameters that matter before adding a configuration to your inquiry.</p>
+        </div>
+
+        <div class="catalog-layout">
+          <aside class="catalog-sidebar reveal" aria-label="Catalog filters">
+            <div class="filter-block">
+              <label class="search-box" for="productSearch"><svg><use href="#i-search"></use></svg><input id="productSearch" type="search" autocomplete="off" data-placeholder="searchPlaceholder" placeholder="Search product, SKU, material"></label>
+            </div>
+            <div class="filter-block">
+              <span class="filter-label" data-i18n="filterRoom">Room</span>
+              <div class="filter-stack" id="roomFilters"></div>
+            </div>
+            <div class="filter-block">
+              <span class="filter-label" data-i18n="filterCollection">Collection</span>
+              <div class="filter-stack" id="collectionFilters"></div>
+            </div>
+            <div class="filter-block">
+              <label class="check-line"><input id="configurableOnly" type="checkbox"><span data-i18n="configurableOnly">Configurable only</span></label>
+              <label class="check-line"><input id="inStockOnly" type="checkbox"><span data-i18n="inStockOnly">In stock only</span></label>
+            </div>
+            <button class="text-reset" id="clearFilters" type="button" data-i18n="clearFilters">Clear filters</button>
+          </aside>
+
+          <div class="catalog-main">
+            <div class="catalog-toolbar reveal">
+              <span id="catalogCount">20 products</span>
+              <label class="sort-label"><span data-i18n="sortLabel">Sort</span><select id="sortSelect"><option value="featured" data-i18n="sortFeatured">Featured</option><option value="price-asc" data-i18n="sortLow">Price low → high</option><option value="price-desc" data-i18n="sortHigh">Price high → low</option><option value="stock" data-i18n="sortStock">In stock first</option></select></label>
+            </div>
+            <div class="product-grid" id="productGrid"></div>
+            <div class="empty-state" id="catalogEmpty" hidden><strong data-i18n="emptyTitle">Nothing matches these filters.</strong><span data-i18n="emptyText">Reset filters or try another search.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section collections-section" id="collections">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div><p class="kicker" data-i18n="collectionsEyebrow">COLLECTIONS</p><h2 data-i18n="collectionsTitle">Four ways to build a room.</h2></div>
+          <p data-i18n="collectionsIntro">Furniture families developed around common proportions, materials and use cases.</p>
+        </div>
+        <div class="collection-grid" id="collectionGrid"></div>
+      </div>
+    </section>
+
+    <section class="section material-section" id="materials">
+      <div class="shell material-grid">
+        <div class="material-copy reveal">
+          <p class="kicker" data-i18n="materialsEyebrow">MATERIAL TRANSPARENCY</p>
+          <h2 data-i18n="materialsTitle">Know what the furniture is made from.</h2>
+          <p data-i18n="materialsIntro">Solid ash, oak veneer, birch plywood, performance fabric and powder-coated steel — selected for specific jobs, not used as vague marketing labels.</p>
+          <button class="btn btn-line" type="button" data-open-order data-i18n="requestSamples">Request material samples</button>
+        </div>
+        <div class="swatch-grid reveal reveal-delay" id="swatchGrid"></div>
+      </div>
+    </section>
+
+    <section class="section custom-section" id="custom">
+      <div class="shell custom-grid">
+        <div class="custom-media reveal">
+          <img src="https://images.unsplash.com/photo-1631396326646-c06a935ff3a6?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=78&w=1600" alt="Furniture workshop with chair under construction">
+          <div class="custom-media__tag"><span>420 m²</span><small data-i18n="workshopTag">fictional local workshop</small></div>
+        </div>
+        <div class="custom-copy reveal reveal-delay">
+          <p class="kicker" data-i18n="customEyebrow">CUSTOM FURNITURE</p>
+          <h2 data-i18n="customTitle">When standard dimensions stop working.</h2>
+          <p data-i18n="customIntro">Wardrobes, storage, desks and selected furniture developed around your measurements and material palette.</p>
+          <ol class="process-list">
+            <li><span>01</span><div><strong data-i18n="processRequest">Request</strong><small data-i18n="processRequestText">Photos, approximate dimensions and budget.</small></div></li>
+            <li><span>02</span><div><strong data-i18n="processMeasure">Measure & design</strong><small data-i18n="processMeasureText">Site measurement, drawings and material selection.</small></div></li>
+            <li><span>03</span><div><strong data-i18n="processQuote">Quote & confirm</strong><small data-i18n="processQuoteText">Written specification, price and production window.</small></div></li>
+            <li><span>04</span><div><strong data-i18n="processProduce">Produce & install</strong><small data-i18n="processProduceText">QC, delivery and installation for built-ins.</small></div></li>
+          </ol>
+          <button class="btn btn-primary" type="button" id="customFormToggle" data-i18n="startCustom">Start a custom project</button>
+        </div>
+      </div>
+
+      <div class="shell custom-form-wrap" id="customFormWrap" hidden>
+        <form class="request-form custom-form" id="customProjectForm" novalidate>
+          <div class="form-head"><div><p class="kicker" data-i18n="customFormEyebrow">CUSTOM REQUEST</p><h3 data-i18n="customFormTitle">Tell us what has to fit.</h3></div><p data-i18n="customFormNote">Demo form — data stays only in this browser.</p></div>
+          <div class="form-grid">
+            <label><span data-i18n="fieldProjectType">Project type</span><select name="projectType" required><option value="" data-i18n="selectOption">Select</option><option>Wardrobe</option><option>Storage</option><option>Desk / office</option><option>Dining</option><option>Bedroom</option><option>Apartment furnishing</option><option>B2B</option></select></label>
+            <label><span data-i18n="fieldRoom">Room / space</span><input name="room" required data-placeholder="roomPlaceholder" placeholder="Living room, bedroom, office…"></label>
+            <label><span data-i18n="fieldDimensions">Approx. dimensions</span><input name="dimensions" data-placeholder="dimensionsPlaceholder" placeholder="e.g. wall 310 × 260 cm"></label>
+            <label><span data-i18n="fieldBudget">Budget range</span><select name="budget"><option value="" data-i18n="notSure">Not sure yet</option><option>250,000–500,000 AMD</option><option>500,000–1,000,000 AMD</option><option>1,000,000–2,500,000 AMD</option><option>2,500,000+ AMD</option></select></label>
+            <label><span data-i18n="fieldMaterial">Preferred material</span><select name="material"><option value="" data-i18n="notSure">Not sure yet</option><option>Natural oak</option><option>Smoked oak</option><option>Walnut</option><option>Painted / warm white</option><option>Mixed materials</option></select></label>
+            <label><span data-i18n="fieldDeadline">Desired timing</span><input name="deadline" data-placeholder="deadlinePlaceholder" placeholder="e.g. November 2026"></label>
+            <label><span data-i18n="fieldName">Name</span><input name="name" autocomplete="name" required></label>
+            <label><span data-i18n="fieldPhone">Phone</span><input name="phone" type="tel" autocomplete="tel" placeholder="+374 …" required></label>
+            <label class="span-2"><span data-i18n="fieldEmail">Email</span><input name="email" type="email" autocomplete="email" placeholder="name@example.com"></label>
+            <label class="span-2"><span data-i18n="fieldNotes">Notes</span><textarea name="notes" rows="4" data-placeholder="notesPlaceholder" placeholder="What needs to fit, store or change?"></textarea></label>
+          </div>
+          <div class="form-actions"><p data-i18n="formPrivacy">Nothing is sent to a server. The demo request is stored locally.</p><button class="btn btn-primary btn-large" type="submit" data-i18n="sendCustomRequest">Save demo request</button></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div><p class="kicker" data-i18n="projectsEyebrow">SELECTED PROJECTS</p><h2 data-i18n="projectsTitle">Furniture in context.</h2></div>
+          <p data-i18n="projectsIntro">Fictional case studies showing how catalog products and custom pieces can work together.</p>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section class="section trade-section" id="trade">
+      <div class="shell trade-card reveal">
+        <div class="trade-copy">
+          <p class="kicker kicker-light" data-i18n="tradeEyebrow">FOR DESIGNERS / B2B</p>
+          <h2 data-i18n="tradeTitle">One specification.<br>Repeatable production.</h2>
+          <p data-i18n="tradeIntro">Material samples, dimensions, custom sizes, project pricing and a single project contact for designers, cafés, offices and serviced apartments.</p>
+          <div class="trade-actions"><button class="btn btn-light" type="button" data-open-trade data-i18n="tradeProgram">Trade program</button><button class="btn btn-ghost-light" type="button" data-open-b2b data-i18n="discussB2B">Discuss a B2B project</button></div>
+        </div>
+        <div class="trade-metrics">
+          <div><strong>10+</strong><span data-i18n="tradeMetricUnits">repeated units typical minimum</span></div>
+          <div><strong>1.5M AMD</strong><span data-i18n="tradeMetricValue">typical project value threshold</span></div>
+          <div><strong>5–12%</strong><span data-i18n="tradeMetricPricing">project pricing range vs retail equivalent</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section showrooms-section" id="showrooms">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div><p class="kicker" data-i18n="showroomEyebrow">SHOWROOMS</p><h2 data-i18n="showroomTitle">See materials before choosing them.</h2></div>
+          <p data-i18n="showroomIntro">Compare finishes, sit on upholstery products and review configurations in person.</p>
+        </div>
+        <div class="showroom-grid">
+          <article class="showroom-card reveal">
+            <div class="showroom-media"><img src="https://images.unsplash.com/photo-1745794621090-d856c53b0cc2?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=78&w=1600" alt="Bright contemporary dining room"></div>
+            <div class="showroom-info"><span class="showroom-type" data-i18n="mainShowroom">MAIN SHOWROOM</span><h3>TOVENI Arabkir</h3><p>12 Vardeni Lane, Arabkir, Yerevan</p><p data-i18n="arabkirHours">Mon–Sat 10:30–19:30 · Sun 12:00–18:00</p><div class="showroom-actions"><button class="text-link" type="button" data-open-order data-i18n="bookConsultation">Book consultation</button><a class="text-link" href="mailto:showroom@toveni.example">showroom@toveni.example</a></div></div>
+          </article>
+          <article class="showroom-card reveal reveal-delay">
+            <div class="showroom-media showroom-media--office"><img src="https://images.unsplash.com/photo-1758315417320-a8bbed64d29b?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=78&w=1600" alt="Minimal office and desk interior"></div>
+            <div class="showroom-info"><span class="showroom-type" data-i18n="workshopStudio">WORKSHOP STUDIO</span><h3>TOVENI Shengavit</h3><p>7 Mshak Lane, Shengavit, Yerevan</p><p data-i18n="shengavitHours">Tue–Sat 11:00–18:00 · Appointment preferred</p><div class="showroom-actions"><button class="text-link" type="button" data-open-order data-i18n="requestVisit">Request a visit</button><a class="text-link" href="mailto:custom@toveni.example">custom@toveni.example</a></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="shell faq-grid">
+        <div class="faq-copy reveal"><p class="kicker">FAQ</p><h2 data-i18n="faqTitle">Clear before production starts.</h2><p data-i18n="faqIntro">Lead times, deposits, delivery, assembly and customization — the practical questions first.</p><button class="btn btn-line" type="button" data-open-order data-i18n="askQuestion">Ask another question</button></div>
+        <div class="faq-list reveal reveal-delay" id="faqList"></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="shell contact-grid">
+        <div class="contact-copy reveal">
+          <p class="kicker" data-i18n="contactEyebrow">CONTACT / REQUEST</p>
+          <h2 data-i18n="contactTitle">Working with a difficult room?</h2>
+          <p data-i18n="contactIntro">Send dimensions and a few details. The demo will build an inquiry you can review before saving it locally.</p>
+          <button class="btn btn-primary btn-large" type="button" data-open-order data-i18n="sendRequest">Send a request</button>
+        </div>
+        <div class="contact-list reveal reveal-delay">
+          <a href="tel:+37410000000"><svg><use href="#i-phone"></use></svg><span><small data-i18n="generalPhone">General phone</small><strong>+374 10 000 000</strong></span></a>
+          <a href="mailto:hello@toveni.example"><svg><use href="#i-mail"></use></svg><span><small data-i18n="generalEmail">General email</small><strong>hello@toveni.example</strong></span></a>
+          <a href="mailto:custom@toveni.example"><svg><use href="#i-ruler"></use></svg><span><small data-i18n="customEmail">Custom furniture</small><strong>custom@toveni.example</strong></span></a>
+          <a href="mailto:trade@toveni.example"><svg><use href="#i-arrow"></use></svg><span><small data-i18n="tradeEmail">Trade / B2B</small><strong>trade@toveni.example</strong></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand-col">
+        <a class="brand brand-footer" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="4" y="5" width="40" height="38" rx="2" fill="none" stroke="currentColor"/><path d="M11 14h26v6H28v17h-7V20H11z" fill="currentColor"/><path d="M31 14h7L28 37h-7z" fill="var(--accent)"/></svg></span><span class="brand-copy"><strong>TOVENI</strong><small>FURNITURE / YEREVAN</small></span></a>
+        <p data-i18n="footerDesc">A fictional furniture brand created exclusively as a commercial web-development demonstration project.</p>
+      </div>
+      <div class="footer-links"><strong data-i18n="footerExplore">Explore</strong><a href="#shop" data-i18n="navShop">Shop</a><a href="#collections" data-i18n="navCollections">Collections</a><a href="#custom" data-i18n="navCustom">Custom</a><a href="#projects" data-i18n="navProjects">Projects</a></div>
+      <div class="footer-links"><strong data-i18n="footerBusiness">Business</strong><a href="#trade" data-i18n="tradeProgram">Trade program</a><a href="#trade" data-i18n="b2bProjects">B2B projects</a><a href="#showrooms" data-i18n="navShowrooms">Showrooms</a><a href="#faq">FAQ</a></div>
+      <div class="footer-links"><strong data-i18n="footerContact">Contact</strong><a href="mailto:hello@toveni.example">hello@toveni.example</a><a href="tel:+37410000000">+374 10 000 000</a><span>@toveni.furniture.demo</span><span>EN · HY · RU</span></div>
+    </div>
+    <div class="shell footer-bottom"><span>© 2026 TOVENI — Fictional demo</span><span data-i18n="footerTech">HTML · CSS · JavaScript</span><span data-i18n="footerNote">No real orders, addresses or contacts.</span></div>
+  </footer>
+
+  <aside class="drawer" id="inquiryDrawer" aria-hidden="true" aria-labelledby="inquiryTitle">
+    <div class="drawer-backdrop" data-close-drawer></div>
+    <div class="drawer-panel">
+      <div class="drawer-head"><div><p class="kicker" data-i18n="inquiryEyebrow">YOUR INQUIRY</p><h2 id="inquiryTitle" data-i18n="inquiryTitle">Request list</h2></div><button class="icon-btn" type="button" data-close-drawer aria-label="Close"><svg><use href="#i-close"></use></svg></button></div>
+      <div class="drawer-body" id="inquiryItems"></div>
+      <div class="drawer-foot"><div class="drawer-total"><span data-i18n="estimatedTotal">Estimated product total</span><strong id="inquiryTotal">0 AMD</strong></div><p data-i18n="inquiryNote">Delivery, assembly and project work are quoted separately.</p><button class="btn btn-primary btn-large" type="button" id="continueOrder" data-i18n="continueRequest">Continue request</button><button class="text-reset" type="button" id="clearInquiry" data-i18n="clearInquiry">Clear list</button></div>
+    </div>
+  </aside>
+
+  <aside class="drawer" id="favoritesDrawer" aria-hidden="true" aria-labelledby="favoritesTitle">
+    <div class="drawer-backdrop" data-close-favorites></div>
+    <div class="drawer-panel">
+      <div class="drawer-head"><div><p class="kicker" data-i18n="favoritesEyebrow">SAVED</p><h2 id="favoritesTitle" data-i18n="favoritesTitle">Favorites</h2></div><button class="icon-btn" type="button" data-close-favorites aria-label="Close"><svg><use href="#i-close"></use></svg></button></div>
+      <div class="drawer-body" id="favoriteItems"></div>
+    </div>
+  </aside>
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-product></div>
+    <section class="product-modal__panel" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+      <button class="modal-close icon-btn" type="button" data-close-product aria-label="Close"><svg><use href="#i-close"></use></svg></button>
+      <div id="productModalContent"></div>
+    </section>
+  </div>
+
+  <div class="modal" id="orderModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-order></div>
+    <section class="order-panel" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+      <button class="modal-close icon-btn" type="button" data-close-order aria-label="Close"><svg><use href="#i-close"></use></svg></button>
+      <div class="order-layout">
+        <div class="order-summary-col">
+          <p class="kicker" data-i18n="orderEyebrow">ORDER / PROJECT REQUEST</p>
+          <h2 id="orderTitle" data-i18n="orderTitle">Send one clear request.</h2>
+          <p data-i18n="orderIntro">Products and configurations from your inquiry are included automatically.</p>
+          <div class="order-summary" id="orderSummary"></div>
+        </div>
+        <div class="order-form-col">
+          <form class="request-form" id="orderForm" novalidate>
+            <input type="hidden" name="requestType" id="orderRequestType" value="product">
+            <div class="form-grid">
+              <label><span data-i18n="fieldName">Name</span><input name="name" autocomplete="name" required></label>
+              <label><span data-i18n="fieldPhone">Phone</span><input name="phone" type="tel" autocomplete="tel" placeholder="+374 …" required></label>
+              <label><span data-i18n="fieldEmail">Email</span><input name="email" type="email" autocomplete="email" placeholder="name@example.com"></label>
+              <label><span data-i18n="fieldCity">City</span><input name="city" autocomplete="address-level2" value="Yerevan"></label>
+              <label><span data-i18n="fieldContactMethod">Preferred contact</span><select name="contactMethod"><option data-i18n="contactPhone">Phone</option><option data-i18n="contactEmail">Email</option></select></label>
+              <label><span data-i18n="fieldService">Delivery / assembly</span><select name="service"><option data-i18n="serviceDiscuss">Discuss with consultant</option><option data-i18n="serviceDelivery">Delivery only</option><option data-i18n="serviceAssembly">Delivery + assembly</option><option data-i18n="servicePickup">Showroom pickup</option></select></label>
+              <label class="span-2"><span data-i18n="fieldAddress">Delivery address / area</span><input name="address" autocomplete="street-address" data-placeholder="addressPlaceholder" placeholder="District or address"></label>
+              <label class="span-2"><span data-i18n="fieldNotes">Notes</span><textarea name="notes" rows="4" data-placeholder="orderNotesPlaceholder" placeholder="Access, dimensions, deadline, questions…"></textarea></label>
+            </div>
+            <label class="consent-line"><input type="checkbox" name="ack" required><span data-i18n="demoConsent">I understand this is a fictional portfolio demo and no real order will be created.</span></label>
+            <div class="form-actions"><p data-i18n="formPrivacy">Nothing is sent to a server. The demo request is stored locally.</p><button class="btn btn-primary btn-large" type="submit" data-i18n="saveRequest">Save demo request</button></div>
+          </form>
+          <div class="order-success" id="orderSuccess" hidden>
+            <div class="success-mark"><svg><use href="#i-check"></use></svg></div>
+            <p class="kicker" data-i18n="successEyebrow">REQUEST SAVED</p>
+            <h2 data-i18n="successTitle">Your demo request is ready.</h2>
+            <p data-i18n="successText">Nothing was sent anywhere. The request exists only in this browser.</p>
+            <div class="request-code"><span data-i18n="requestId">Request ID</span><strong id="requestCode">TOV-0000</strong></div>
+            <button class="btn btn-line" type="button" data-close-order data-i18n="close">Close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
